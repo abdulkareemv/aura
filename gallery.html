@@ -4,7 +4,41 @@
   <meta charset="UTF-8">
   <title>AURA 2K25 Gallery</title>
   <link rel="stylesheet" href="./styleg.css">
+ <style>
+        /* Header */
+        .header {
+            background-color: #0f0f1f;
+            padding: 1rem 0;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .header .logo img {
+            width: 120px;
+        }
+   .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #7f00ff; /* Matching gradient start color */
+        }
 
+  </style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -24,11 +58,30 @@
     <link rel="preload" href="https://i.postimg.cc/HnFyxbLz/futuristic-technical-item.jpg" as="image">
 </head>
 <body>
+  <!-- Header -->
+    <header class="header">
+        <div class="container">
+          <a href="index.html">
+            <div class="logo">
+                <img src="https://i.postimg.cc/MpxDcGbq/Whats-App-Image-2025-01-23-at-06-47-04-a02f3951-removebg-preview.png' border='0' alt='Whats-App-Image-2025-01-23-at-06-47-04-a02f3951-removebg-preview'/></a>" alt="AURA 2025 Logo">
+            </div>
+          </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="gallery.html">Go to Gallery</a>
+
+  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <header>
         <h1>Event Gallery</h1>
-        <nav>
-            <a href="index.html" class="home-btn">Home</a>
-        </nav>
     </header>
     <main>
         <section class="carousel" aria-label="Image Carousel">
