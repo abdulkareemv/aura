@@ -102,6 +102,26 @@ h2 {
 .hero .cta-btn:hover {
   background-color: #7f00ff;
 }
+@keyframes blinkEffect {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; } /* Reduce opacity for blinking effect */
+  100% { opacity: 1; }
+}
+
+.hero .date {
+  background: linear-gradient(90deg, #007bff, #8a2be2); /* Blue to Violet gradient */
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: background 0.3s;
+  animation: blinkEffect 1s infinite; /* Apply blinking animation */
+}
+
+.hero .date:hover {
+  background: linear-gradient(90deg, #0056b3, #6a1bbd); /* Darker Blue to Violet on hover */
+}
 
 /* Footer */
 footer {
@@ -247,7 +267,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    justify-content: center; /* Center the grid within the container */
+    justify-content: center; /* Center the grid within the */
     align-items: center; /* Align tiles vertically */
 }
 
