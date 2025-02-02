@@ -57,6 +57,7 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
+
 .event p {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -109,7 +110,7 @@ h2 {
 }
 
 .hero .date {
-  background: linear-gradient(90deg, #007bff, #8a2be2); /* Blue to Violet gradient */
+  background: linear-gradient(90deg, #00FFFF, #0000FF); /* Blue to Cyan gradient */
   color: #fff;
   padding: 0.8rem 2rem;
   border-radius: 5px;
@@ -120,8 +121,12 @@ h2 {
 }
 
 .hero .date:hover {
-  background: linear-gradient(90deg, #0056b3, #6a1bbd); /* Darker Blue to Violet on hover */
+  background: linear-gradient(90deg, #0000CC, #00CED1); /* Slightly darker Blue to Cyan on hover */
 }
+
+
+
+
 
 /* Footer */
 footer {
@@ -349,4 +354,40 @@ footer {
     justify-content: center;
     position: relative; /* Keeps it below the content */
     margin-top: 40px; /* Space between contact section and footer */
+}
+.gradient-text {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #FFFFFF, #FFDD33, #FF1493, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: -10px; /* Adjust spacing */
+}
+.register-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(to right, #ff0080, #8000ff); /* Magenta to Violet */
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .register-button:hover {
+        background: linear-gradient(to right, #8000ff, #ff0080);
+        transform: scale(1.1);
+    }
+.no-style-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color unchanged */
+    display: inline-block; /* Ensures div behaves as expected */
+}
+
+.no-style-link:hover {
+    color: inherit; /* Prevents color change on hover */
 }
