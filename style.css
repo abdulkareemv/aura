@@ -5,28 +5,6 @@
   box-sizing: border-box;
 }
 
-.event-buttons {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.event-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(135deg, #7f00ff, #e100ff);
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.event-btn:hover {
-    background: linear-gradient(135deg, #e100ff, #7f00ff);
-    transform: scale(1.05);
-}
 
 
 /* Body Styling */
