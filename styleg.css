@@ -116,10 +116,16 @@ footer .social-icons a:hover {
 }
 .rules h4 {
     color: light green; /* Rules & Regulations heading in red */
+  font-weight: bold;
 }
 
 .contact h4 {
     color: #67E8F9;  /* Contact Details heading in green */
+  font-weight: bold;
+ 
+}
+.contact h5 {
+     color: #A0F0FF;  /* Contact Details heading in green */
  
 }
 .container {
@@ -456,9 +462,22 @@ footer .social-icons a:hover {
         text-transform: uppercase;
         letter-spacing: 2px;
     }
+.coordinator p {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px; /* Controls spacing */
+    align-items: center;
+}
+
+.coordinator p strong {
+    display: inline-block;
+    width: 140px; /* Adjust width to align numbers properly */
+    text-align: left;
+}
+
 </style>
+
 
 
   
       
-
