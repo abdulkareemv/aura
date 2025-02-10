@@ -474,7 +474,19 @@ footer .social-icons a:hover {
     width: 140px; /* Adjust width to align numbers properly */
     text-align: left;
 }
+.blinking-warning {
+    display: block;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px;
+    animation: blink 1s infinite alternate;
+  }
 
+  @keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 </style>
 
 
