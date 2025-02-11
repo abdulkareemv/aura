@@ -126,7 +126,11 @@ h2 {
   background: linear-gradient(90deg, #0000CC, #00CED1); /* Slightly darker Blue to Cyan on hover */
 }
 
-
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 
 
