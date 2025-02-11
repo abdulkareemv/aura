@@ -250,6 +250,34 @@
               <a href="Register.html
 " class="register-button" target="_blank">Register Now</a>
 <br><br><br>
+   <div style="background-color: yellow; color: red; text-align: center; padding: 15px; font-size: 18px; font-weight: bold; border-radius: 5px; margin-top: 20px;">
+    🚨 Last Chance! Online Registrations Close at <strong>6:00 PM Today!</strong> 🚨<br>
+     <span id="countdown" style="font-size: 22px; font-weight: bold; animation: blink1 2s infinite;"></span>
+</div>
+  <script>
+function startCountdown() {
+    const deadline = new Date();
+    deadline.setHours(18, 0, 0, 0);
+    
+    function updateTimer() {
+        const now = new Date();
+        let timeDiff = deadline - now;
+        if (timeDiff <= 0) {
+            document.getElementById("countdown").innerHTML = "Registration Closed";
+            return;
+        }
+        let hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
+        let minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
+        let seconds = Math.floor((timeDiff / 1000) % 60);
+        document.getElementById("countdown").innerHTML = `${hours}h ${minutes}m ${seconds}s left`;
+    }
+    setInterval(updateTimer, 1000);
+    updateTimer();
+}
+
+document.addEventListener("DOMContentLoaded", startCountdown);
+</script>
+
         <!-- Department of Instrumentation Engineering -->
         <!--h3 class="department-heading">Instrumentation Engineering</h3-->
 <div class="event-box" id="day1">
