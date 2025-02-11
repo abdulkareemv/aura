@@ -487,6 +487,11 @@ footer .social-icons a:hover {
     0% { opacity: 1; }
     100% { opacity: 0; }
   }
+@keyframes blink1 {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
 </style>
 
 
